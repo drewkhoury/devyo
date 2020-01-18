@@ -1,0 +1,4 @@
+.bash_history
+output
+**/node_modules/
+**/coverage/
