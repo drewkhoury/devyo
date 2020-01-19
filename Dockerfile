@@ -19,8 +19,8 @@ RUN chown yeoman:root /usr/local/lib/node_modules
 
 ENV HOME /home/yeoman
 
-RUN mkdir /devyo && chown yeoman:yeoman /devyo
-WORKDIR /devyo
+RUN mkdir /code && chown yeoman:yeoman /code
+WORKDIR /code
 
 USER yeoman
 

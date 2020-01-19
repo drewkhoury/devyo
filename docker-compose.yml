@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  local:
+    build: .
+    command: sh
+    volumes:
+      - .:/code
+    stdin_open: true
+    tty: true

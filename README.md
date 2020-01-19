@@ -1,31 +1,21 @@
-# Create dev yeoman container
+# Getting started
 
-```
-docker build . -t devyo
-```
+Create a container and shell into it for adhoc development by running `make run`.
 
-# Run dev yeoman container - and create a generator
+**Requirments:** `make`, `docker-compose` & `docker`.
 
-```
-docker run -v /Users/drew/code/yo/:/devyo -it devyo sh
-```
 
-## Creating your own generator
+# Once you're inside the container
 
-```
-/devyo $ yo generator
-```
+You can create your own generator with `yo generator` or you can use the sample generator located in `/code/generator-devyo/`.
 
-## Working with an existing generator
+To make a generator available locally in the container `cd` into it's directory then run `npm link`.
 
-Make locally accessable:
-```
-/devyo $ cd generator-devyo
-/devyo $ npm link
-```
+To create a new project from a generator:
 
-Create new project from a generator:
-```
-/devyo $ mkdir new-folder && cd new-folder
-/devyo $ go generator-devyo
-```
+1. Create a new directory `mkdir new-folder && cd new-folder`
+2. Run `yo <generator-name>` eg `yo devyo`
+
+# More Info
+
+See [Optimizing for DX — The Developer Experience](https://medium.com/@drew.khoury/optimizing-for-dx-the-developer-experience-f37fe168642d?source=friends_link&sk=6ea1510ec165364331781c83de24d544) for more info about why this repo exists and how you can use these patterns to make your life easier as a developer.
