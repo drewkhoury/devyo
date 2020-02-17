@@ -19,5 +19,3 @@ To create a new project from a generator:
 # More Info
 
 See [Optimizing for DX — The Developer Experience](https://medium.com/@drew.khoury/optimizing-for-dx-the-developer-experience-f37fe168642d?source=friends_link&sk=6ea1510ec165364331781c83de24d544) for more info about why this repo exists and how you can use these patterns to make your life easier as a developer.
-
-...
