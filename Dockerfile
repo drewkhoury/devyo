@@ -1,4 +1,4 @@
-FROM node:alpine
+FROM node:21.2-alpine3.18
 
 LABEL maintainer "Andrew Khoury <drew.khoury@gmail.com>"
 
